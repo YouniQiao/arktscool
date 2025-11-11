@@ -25,6 +25,11 @@ const config = {
     locales: ["zh-Hans"],
   },
 
+  scripts: [
+    {src: 'https://hm.baidu.com/hm.js?3d2021c64656a5f53bd24b27bc633508',  async: true},
+    
+  ],
+
   plugins: [],
 
   presets: [
