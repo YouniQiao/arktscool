@@ -19,15 +19,14 @@ export default function PoweredByNx(): JSX.Element {
         <div className={clsx("col col--6", styles.item__inner)}>
           <div>
             <h1 className={clsx("margin-bottom--md", styles.item__title)}>
-              Fastest Build System <span>Powered by Nx</span>
+              静态检查
             </h1>
             <p className="margin-bottom--md">
-              Lerna runs a command against any number of projects in the most efficient way, in the right
-              order, in parallel, using advanced caching and with the possibility to distribute that on
-              multiple machines.
+              静态类型是ArkTS最重要的特性之一。使用静态类型，程序中变量的类型是确定的，
+              编译器可以验证代码的正确性，从而减少运行时的类型检查，有助于性能提升。
             </p>
-            <a className="button button--secondary" href="/docs/features/run-tasks">
-              Running Tasks
+            <a className="button button--secondary" href="/">
+              了解更多
             </a>
           </div>
         </div>

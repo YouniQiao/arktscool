@@ -26,47 +26,27 @@ export default function HeroLerna(): JSX.Element {
       <div className="container">
         <div className="row">
           <div className="col col--8 margin-vert--xl">
-            <h1 className={styles.slogan}>
-              <span>The Original Tool for</span>
-              <span className={styles.slogan__highlight}>JavaScript Monorepos</span>
+            <h1 className={styles.slogan}> 
+              <span className={styles.slogan__highlight}>ArkTS 编程语言</span>
             </h1>
             <p className={styles.description}>
-              Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript
-              packages from the same repository.
+              ArkTS 是 HarmonyOS 应用开发语言，在继承 TypeScript 核心语法特性的基础上，构建规范化的类型系统，通过编译期静态检查与分析机制，
+              提升代码健壮性，并实现更好的运行性能，更简洁、更自然开发高性能应用。
             </p>
             <div className="padding-vert--md row">
               <div className="col col--5">
-                <a href="/docs/getting-started" className="button button--lg button--block button--primary">
-                  Get Started
+                <a href="/docs/intro" className="button button--lg button--block button--primary">
+                  快速开始
                 </a>
               </div>
-              <div className="col col--5">
-                <CopyToClipboard
-                  text={command}
-                  onCopy={() => {
-                    setCopied(true);
-                  }}
-                >
-                  <button
-                    className={clsx(
-                      "button button--lg button--block button--outline button--secondary",
-                      styles.command
-                    )}
-                  >
-                    <span className={styles.command__text}>
-                      <span aria-hidden="true">$</span> {command}
-                    </span>
-                    <DocumentDuplicateIcon className={styles.command__icon} />
-                  </button>
-                </CopyToClipboard>
-              </div>
+
             </div>
           </div>
           <div className="col col--4">
             <div className={styles.illustration}>
               <div
                 className={styles.illustration__container}
-                style={{ backgroundImage: 'url("/images/background/blob-lerna-vertical.svg")' }}
+                
               >
                 <LernaIcon className={styles.illustration__svg} />
               </div>

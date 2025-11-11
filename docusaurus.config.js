@@ -6,23 +6,23 @@ const darkCodeTheme = require("prism-react-renderer").themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Lerna",
-  tagline: "Original Monorepo Tool",
-  url: "https://lerna.js.org",
+  title: "ArkTS",
+  tagline: "HarmonyOS programming language",
+  url: "https://arkts.cool",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "images/favicon.ico",
-  organizationName: "lerna",
-  projectName: "website",
+  organizationName: "youniqiao",
+  projectName: "arktscool",
   deploymentBranch: "master",
   trailingSlash: false,
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "en",
-    locales: ["en"],
+    defaultLocale: "zh-Hans",
+    locales: ["zh-Hans"],
   },
 
   plugins: [],
@@ -35,7 +35,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/lerna/lerna/tree/main/website/",
+          editUrl: "https://github.com/YouniQiao/arktscool/tree/master/",
           sidebarCollapsed: false,
         },
         theme: {
@@ -47,10 +47,6 @@ const config = {
           ignorePatterns: ["/tags/**"],
           filename: "sitemap.xml",
         },
-        gtag: {
-          trackingID: "G-1LKTTC3R7Q",
-          anonymizeIP: true,
-        },
       }),
     ],
   ],
@@ -58,13 +54,13 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      algolia: {
-        appId: "W7AFDUEIGE",
-        apiKey: "95785b7a78017aade2bc8b82ca965e24",
-        indexName: "lerna",
-        contextualSearch: false,
-        searchPagePath: false,
-      },
+      // algolia: {
+      //   appId: "W7AFDUEIGE",
+      //   apiKey: "95785b7a78017aade2bc8b82ca965e24",
+      //   indexName: "lerna",
+      //   contextualSearch: false,
+      //   searchPagePath: false,
+      // },
       // announcementBar: {
       //   id: "lerna-talks",
       //   content:
@@ -85,16 +81,16 @@ const config = {
         },
       },
       metadata: [
-        { name: "keywords", content: "monorepo, javascript, typescript, lerna, nx, nrwl" },
+        { name: "keywords", content: "arkts, javascript, typescript, harmonyos, deveco studio" },
         {
           name: "description",
           content:
-            "Lerna is the standard tool for managing and publishing versioned Javascript packages from a same repository.",
+            "HarmonyOS programming language.",
         },
         { name: "og:image", content: "https://lerna.js.org/images/og-image-lerna.png" },
       ],
       navbar: {
-        title: "Lerna",
+        title: "ArkTS",
         logo: {
           alt: "Lerna Logo",
           src: "images/lerna-logo-dark.svg",
@@ -103,102 +99,97 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "introduction",
+            docId: "intro",
             position: "left",
-            label: "Docs",
+            label: "指南",
           },
-          {
-            type: "doc",
-            docId: "getting-started",
-            position: "left",
-            label: "Get Started",
-          },
-          {
-            href: "https://github.com/lerna/lerna",
-            className: "header-github-link",
-            "aria-label": "GitHub repository",
-            position: "right",
-            title: "Lerna on Github",
-          },
+          
+          //{
+          //  href: "https://github.com/lerna/lerna",
+          //  className: "header-github-link",
+          //  "aria-label": "GitHub repository",
+          //  position: "right",
+          //  title: "Lerna on Github",
+          //},
         ],
         hideOnScroll: true,
       },
       footer: {
-        links: [
-          {
-            title: "Resources",
-            items: [
-              {
-                label: "Blog",
-                href: "https://nx.dev/blog?utm_source=lerna.js.org",
-              },
-              {
-                label: "Youtube Channel",
-                href: "https://youtube.com/@nxdevtools?utm_source=lerna.js.org",
-              },
-              {
-                label: "About Us",
-                href: "https://nx.app/company?utm_source=lerna.js.org",
-              },
-            ],
-          },
-          {
-            title: "Help",
-            items: [
-              {
-                label: "Troubleshooting",
-                to: "/docs/troubleshooting",
-              },
-              {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/lerna",
-              },
-              {
-                label: "Report Issues",
-                href: "https://github.com/lerna/lerna/issues?q=is%3Aopen+is%3Aissue",
-              },
-            ],
-          },
-          {
-            title: "Community",
-            items: [
-              {
-                label: "Twitter",
-                href: "https://twitter.com/lernajs",
-              },
-              {
-                label: "GitHub",
-                href: "https://github.com/lerna/lerna",
-              },
-              {
-                label: "Newsletter",
-                href: "https://go.nx.dev/nx-newsletter?utm_source=lerna.js.org",
-              },
-              {
-                label: "Community Discord",
-                href: "https://go.nx.dev/community?utm_source=lerna.js.org",
-              },
-              {
-                label: "Help Us",
-                href: "https://github.com/lerna/lerna/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3Acommunity",
-              },
-            ],
-          },
-          {
-            title: "Solutions",
-            items: [
-              {
-                label: "Nx",
-                href: "https://nx.dev/?utm_source=lerna.js.org",
-              },
-              {
-                label: "NxCloud",
-                href: "https://nx.app/?utm_source=lerna.js.org",
-              },
-            ],
-          },
-        ],
-        copyright: `Released under the MIT License. <br /> &copy; ${new Date().getFullYear()} Copyright Nx.`,
+        // links: [
+        //   {
+        //     title: "Resources",
+        //     items: [
+        //       {
+        //         label: "Blog",
+        //         href: "https://nx.dev/blog?utm_source=lerna.js.org",
+        //       },
+        //       {
+        //         label: "Youtube Channel",
+        //         href: "https://youtube.com/@nxdevtools?utm_source=lerna.js.org",
+        //       },
+        //       {
+        //         label: "About Us",
+        //         href: "https://nx.app/company?utm_source=lerna.js.org",
+        //       },
+        //     ],
+        //   },
+        //   {
+        //     title: "Help",
+        //     items: [
+        //       {
+        //         label: "Troubleshooting",
+        //         to: "/docs/troubleshooting",
+        //       },
+        //       {
+        //         label: "Stack Overflow",
+        //         href: "https://stackoverflow.com/questions/tagged/lerna",
+        //       },
+        //       {
+        //         label: "Report Issues",
+        //         href: "https://github.com/lerna/lerna/issues?q=is%3Aopen+is%3Aissue",
+        //       },
+        //     ],
+        //   },
+        //   {
+        //     title: "Community",
+        //     items: [
+        //       {
+        //         label: "Twitter",
+        //         href: "https://twitter.com/lernajs",
+        //       },
+        //       {
+        //         label: "GitHub",
+        //         href: "https://github.com/lerna/lerna",
+        //       },
+        //       {
+        //         label: "Newsletter",
+        //         href: "https://go.nx.dev/nx-newsletter?utm_source=lerna.js.org",
+        //       },
+        //       {
+        //         label: "Community Discord",
+        //         href: "https://go.nx.dev/community?utm_source=lerna.js.org",
+        //       },
+        //       {
+        //         label: "Help Us",
+        //         href: "https://github.com/lerna/lerna/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3Acommunity",
+        //       },
+        //     ],
+        //   },
+        //   {
+        //     title: "Solutions",
+        //     items: [
+        //       {
+        //         label: "Nx",
+        //         href: "https://nx.dev/?utm_source=lerna.js.org",
+        //       },
+        //       {
+        //         label: "NxCloud",
+        //         href: "https://nx.app/?utm_source=lerna.js.org",
+        //       },
+        //     ],
+        //   },
+        // ],
+        copyright: `&copy; ${new Date().getFullYear()} Theme from Lerna.`,
       },
       prism: {
         theme: lightCodeTheme,

@@ -16,10 +16,13 @@ export default function Home(): JSX.Element {
     >
       <main>
         <HeroLerna />
-        <ProjectsUsingLerna />
         <PoweredByNx />
         <PublishWithLerna />
-        <AboutLerna />
+        
+        {/* <ProjectsUsingLerna />
+        <PoweredByNx />
+        <PublishWithLerna />
+        <AboutLerna /> */}
       </main>
     </Layout>
   );
