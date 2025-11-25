@@ -21,10 +21,23 @@ const sidebars = {
     "intro",
     {
       type: 'category',
-      label: '基础语法',
-      
+      label: '环境搭建',
       items: [
-        'syntax/basics',
+        'setup/environment',
+        'setup/hello-world',
+        'setup/device',
+        'setup/simulator',
+      ],
+    },
+    {
+      type: 'category',
+      label: '基础语法',
+      collapsed: true,
+      items: [
+        'syntax/variable',
+        'syntax/datatype',
+        'syntax/operator',
+        'syntax/statement',
         'syntax/function',
         'syntax/class',
         'syntax/interface',
