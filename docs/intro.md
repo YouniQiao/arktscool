@@ -9,7 +9,7 @@ ArkTS是HarmonyOS应用开发的主力语言，它在TypeScript（简称TS）的
 * TypeScript是JavaScript的超集，它扩展了JavaScript的语法，通过在JavaScript的基础上添加静态类型定义构建而成，是一个开源的编程语言。
 * ArkTS兼容TypeScript语言，拓展了声明式UI、状态管理、并发任务等能力，可以认为是TypeScript的超集。
 
-<img src={require('./img/arkts-ts.png').default} width="800" />
+<img src={require('./figures/arkts-ts.png').default} width="800" />
 
 ArkTS通过规范约束了TypeScript中过于灵活而影响开发正确性或者给运行时带来不必要额外开销的特性：
 * 强制使用静态类型：静态类型是ArkTS最重要的特性之一。如果使用静态类型，那么程序中变量的类型就是确定的。同时，由于所有类型在程序实际运行前都是已知的，编译器可以验证代码的正确性，从而减少运行时的类型检查，有助于性能提升。
@@ -55,10 +55,10 @@ struct HelloWorld {
 * .fontSize(30) 和 .fontWeight(FontWeight.Bold)：设置文本样式。
 
 上述代码运行效果如下所示。
-<img src={require('./img/arkts-ui.png').default} width="400" />
+<img src={require('./figures/arkts-ui.png').default} width="400" />
 
 ## 未来演进
 
-<img src={require('./img/arkts-evolution.png').default} width="800" />
+<img src={require('./figures/arkts-evolution.png').default} width="800" />
 
 未来，ArkTS会结合应用开发/运行的需求持续演进，逐步提供并行和并发能力增强、系统类型增强、分布式开发范式等更多特性。
