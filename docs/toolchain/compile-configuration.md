@@ -127,7 +127,7 @@ arkOptions中transformLib字段示例：
 }
 
 ```
-修改方舟字节码能力可参考[编译期自定义修改方舟字节码](customize-bytecode-during-compilation.md)。
+修改方舟字节码能力可参考[编译期自定义修改方舟字节码](#)。
 
 ### 注意事项
 

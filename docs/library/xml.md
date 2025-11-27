@@ -24,7 +24,7 @@ XML使用XML Schema或DTD（文档类型定义）定义文档结构，开发人�
 
 XML支持命名空间、实体引用、注释和处理指令，灵活适应各种数据需求。
 
-以下是一个简单的XML样例及对应说明，更多XML的接口和具体使用，请见[@ohos.xml](../reference/apis-arkts/js-apis-xml.md)。
+以下是一个简单的XML样例及对应说明，更多XML的接口和具体使用，请见[@ohos.xml](#)。
 
 ```XML
 <!-- 声明 -->
@@ -183,7 +183,7 @@ XML模块提供`XmlSerializer`及`XmlDynamicSerializer`类来生成XML数据，�
 XML模块提供XmlPullParser类用于解析XML文本，输入为包含XML数据的ArrayBuffer或DataView，输出为结构化的解析结果。
 
 
-  **表1** XML解析选项，其详细介绍请参见[ParseOptions](../reference/apis-arkts/js-apis-xml.md#parseoptions)。
+  **表1** XML解析选项，其详细介绍请参见[ParseOptions](#)。
 
 | 名称 | 类型 | 必填 | 说明 |
 | -------- | -------- | -------- | -------- |
