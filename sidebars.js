@@ -74,8 +74,18 @@ const sidebars = {
       label: '并发',
       collapsed: true,
       items: [
+        'concurrency/concurrency-overview',
         'concurrency/asynchronous-concurrency',
-        'concurrency/multi-thread-concurrency',
+        {
+          type: 'category',
+          label: '多线程并发',
+          collapsed: true,
+          items: [
+            'concurrency/multi-thread-concurrency',
+            'concurrency/taskpool',
+            'concurrency/worker',
+          ],
+        },
         'concurrency/inter-thread-communication',
         'concurrency/cases',
       ],
